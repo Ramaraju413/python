@@ -57,7 +57,7 @@ def get_user():
     
     return jsonify({
         'username': session['username'],
-        'authenticated': True
+        'authenticated': false
     }), 200
 
 @app.errorhandler(404)
